@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
 }
@@ -113,7 +113,7 @@ a {
   background: transparent;
   display: flex;
   height: 60px;
-  background: rgba(38, 139, 1, 1);
+  background: linear-gradient(180deg, #7ebeff 0%, #0062eb 100%);
 }
 .header__background {
   position: absolute;
@@ -125,7 +125,7 @@ a {
   z-index: -1;
   -webkit-transition: left 0.3s ease;
   transition: left 0.3s ease;
-  background: rgba(38, 139, 1, 1);
+  background: linear-gradient(180deg, #7ebeff 0%, #0062eb 100%);
 }
 .header.is-open .header__background {
   left: 0;
@@ -200,23 +200,25 @@ a {
 
   border-radius: 0px 0px 20px 20px;
   gap: 28px;
-  background: rgba(233, 255, 146, 1);
-  border-bottom: 2px solid rgba(50, 62, 112, 1);
+  background: linear-gradient(180deg, #1b77ff 0%, #a7d3ff 100%);
+  border-width: 2px 0px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 1);
 }
 .navigation__list.is-open {
   right: 0;
 }
 .navigation__link {
-  font-family: Ubuntu;
+  font-family: Roboto;
   font-size: 18px;
   font-weight: 700;
-  line-height: 20.68px;
+  line-height: 21.09px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 
   text-decoration: none;
-  color: rgba(9, 32, 5, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .header.is-open {
@@ -283,14 +285,14 @@ a {
     justify-content: center;
   }
   .navigation__link {
-    font-family: Ubuntu;
+    font-family: Roboto;
     font-size: 18px;
     font-weight: 700;
-    line-height: 20.68px;
+    line-height: 21.09px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    color: rgba(233, 255, 146, 1);
+
     text-decoration: none;
   }
 
@@ -304,13 +306,13 @@ a {
 
 .home {
   width: 375px;
-  height: 760px;
+  height: 800px;
 
-  padding: 60px 20px 0px;
+  padding: 72px 11px 0px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/img/home/Home.png");
+  background-image: url("/image/home/Home.png");
   margin: auto;
 }
 
@@ -320,45 +322,44 @@ a {
   align-items: center;
 }
 .home-title-img {
-  width: 375px;
-  height: 120.9px;
+  width: 352px;
+  height: 106px;
 }
 .home-title {
-  font-family: Ubuntu;
+  font-family: Roboto;
   font-size: 22px;
-  font-weight: 700;
-  line-height: 25.28px;
+  font-weight: 900;
+  line-height: 25.78px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 
-  text-transform: uppercase;
-
-  color: rgba(255, 255, 255, 1);
+  color: rgba(9, 21, 68, 1);
+  padding: 18px 0;
 }
 
 .home-text {
-  font-family: Ubuntu;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 16.09px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 
   color: rgba(255, 255, 255, 1);
-  padding: 18px 0 0;
+  text-shadow: 0px 1px 0px rgba(0, 15, 41, 1);
 }
 .home__google-button_image {
-  margin-top: 25px;
+  margin-top: 22px;
 }
 @media screen and (min-width: 1200px) {
   .home {
     width: 1440px;
-    height: 799px;
+    height: 800px;
 
-    padding: 129px 691px 0px 46px;
-    background-image: url("/img/home/Home\ \(1\).png");
+    padding: 144px 707px 0px 47px;
+    background-image: url("/image/home/Home\ \(1\).png");
   }
   .home__container-top {
     display: flex;
@@ -367,56 +368,59 @@ a {
     justify-content: center;
   }
   .home-title-img {
-    width: 618px;
-    height: 201px;
+    width: 706px;
+    height: 212px;
   }
   .home-title {
-    font-family: Ubuntu;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 36.77px;
+    font-family: Roboto;
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 44.53px;
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 
-    width: 618px;
+    width: 636px;
+    padding: 25px 0 35px;
   }
 
   .home-text {
-    font-family: Ubuntu;
+    font-family: Roboto;
     font-size: 18px;
-    font-weight: 500;
-    line-height: 20.68px;
+    font-weight: 600;
+    line-height: 26px;
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 
-    width: 618px;
-    padding: 22px 0 0;
+    width: 636px;
+  }
+  .home__google-button_image {
+    margin-top: 53px;
   }
 }
 .about {
-  padding: 28px 20px 0px;
+  padding: 40px 20px 0px;
   margin: auto;
   width: 375px;
-  height: 1106px;
+  height: 1050px;
 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/img/about/About\ us.png");
+  background-image: url("/image/about/About\ the\ Game.png");
 }
 
 .about-title {
-  font-family: Ubuntu;
-  font-size: 34px;
+  font-family: Roboto;
+  font-size: 40px;
   font-weight: 700;
-  line-height: 39.07px;
+  line-height: 30px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  text-transform: uppercase;
-  color: rgba(9, 32, 5, 1);
+
+  color: rgba(255, 255, 255, 1);
 }
 .about-list {
   display: flex;
@@ -425,111 +429,91 @@ a {
   padding-top: 40px;
 }
 .about-text {
-  font-family: Ubuntu;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18.38px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  width: 335px;
-  padding: 22px;
-  border-radius: 36px;
-  background: rgba(255, 255, 255, 1);
-}
-.about-tetx-bold {
-  font-family: Ubuntu;
+  font-family: Roboto;
   font-size: 20px;
-  font-weight: 700;
-  line-height: 22.98px;
+  font-weight: 600;
+  line-height: 32px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  padding-bottom: 10px;
+  color: rgba(35, 1, 8, 1);
+  padding: 50px 0;
 }
+
 @media screen and (min-width: 1200px) {
   .about {
-    padding: 28px 31px 0;
+    padding: 50px 60px 0;
     margin: auto;
     width: 1440px;
-    height: 599px;
-    background-image: url("/img/about/About\ us\ \(1\).png");
+    height: 600px;
+
+    background-image: url("/image/about/About\ the\ Game\ \(1\).png");
   }
 
   .about-title {
-    font-family: Ubuntu;
-    font-size: 34px;
+    font-family: Roboto;
+    font-size: 40px;
     font-weight: 700;
-    line-height: 39.07px;
+    line-height: 30px;
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
 
-  .about-list {
-    display: flex;
-    flex-direction: column;
-
-    gap: 16px;
-    padding-top: 62px;
-  }
   .about-text {
-    width: 833px;
-    padding: 22px;
+    width: 733px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 50px 0 0;
   }
 }
 .reviews {
   width: 375px;
 
   margin: auto;
-  padding: 32px 0px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  background-image: url("/img/reviews/User\ Reviews.png");
+  padding: 51px 0px 51px;
+  background: linear-gradient(180deg, #1b77ff 0%, #a7d3ff 100%);
 }
 
 .reviews-list {
   width: auto;
   padding-top: 40px;
-  padding-bottom: 30px;
+  padding-bottom: 32px;
   margin: auto;
 }
 .reviews-item {
   margin: 0 5px;
   width: 335px;
+  height: 269px;
+  padding: 12px;
+  border-radius: 24px;
+  background: rgba(244, 249, 255, 1);
 }
 .reviews-img {
   margin: auto;
 }
-.reviews-item-texts {
-  width: 335px;
-  height: 225px;
-  margin-top: 16px;
-  padding: 16px 36px 16px 36px;
 
-  border-radius: 26px;
-
-  background: rgba(255, 255, 255, 1);
-  border: 1px solid rgba(255, 255, 255, 1);
-  box-shadow: 0px 4px 20px 0px rgba(255, 255, 255, 1);
-}
 .reviews-text-bold {
-  font-family: Ubuntu;
+  font-family: Roboto;
   font-size: 20px;
   font-weight: 700;
-  line-height: 22.98px;
+  line-height: 23.44px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 
-  padding: 0px 0 2px;
+  padding: 12px 0 6px;
 }
 .reviews-text {
-  font-family: Ubuntu;
+  font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 18.75px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -559,49 +543,162 @@ a {
     width: 1440px;
 
     margin: auto;
-    padding: 38px 60px 91px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    background-image: url("/img/reviews/User\ Reviews\ \(1\).png");
+    padding: 32px 0px 70px;
   }
 
   .reviews-list {
     width: auto;
-    padding-top: 64px;
-    padding-bottom: 40px;
+    padding-top: 49px;
+    padding-bottom: 32px;
     margin: auto;
   }
   .reviews-item {
-    margin: 0 5px;
-    width: 564px;
-  }
-  .reviews-img {
-    margin: auto;
-  }
-  .reviews-item-texts {
-    width: 540px;
-    height: 225px;
-    margin-top: 18px;
-    padding: 36px 36px;
-
-    border-radius: 26px;
-
-    background: rgba(255, 255, 255, 1);
-    border: 1px solid rgba(255, 255, 255, 1);
-    box-shadow: 0px 4px 20px 0px rgba(255, 255, 255, 1);
-  }
-  .reviews-text-bold {
-    padding: 0px 0 6px;
+    margin: 0 16px;
+    width: 440px;
+    height: 231px;
+    padding: 12px 12px 24px;
+    border-radius: 24px;
+    background: rgba(244, 249, 255, 1);
   }
 }
 
+.faq {
+  padding: 32px 20px 0;
+  margin: auto;
+  width: 375px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-image: url("/image/faq/FAQ.png");
+}
+.faq-container {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: auto;
+}
+
+.faq-item {
+  padding: 8px 12px;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23.44px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  color: rgba(255, 255, 255, 1);
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+
+  cursor: pointer;
+}
+
+.faq-answer {
+  width: 261px;
+
+  color: rgba(255, 255, 255, 1);
+  display: none;
+  padding-top: 16px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+.faq-img {
+  width: 353px;
+  height: 424.76px;
+}
+@media screen and (min-width: 1200px) {
+  .faq {
+    padding: 32px 0px 0 100px;
+    margin: auto;
+    width: 1440px;
+
+    background-image: url("/image/faq/FAQ\ \(1\).png");
+  }
+  .faq-div {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+  .faq-container {
+    padding-top: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin: 0;
+  }
+
+  .faq-item {
+    padding: 8px 37px 10px 0;
+    width: 763px;
+  }
+
+  .faq-question {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23.44px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .toggle-button {
+    background: none;
+    border: none;
+
+    cursor: pointer;
+  }
+
+  .faq-answer {
+    width: 619px;
+
+    color: rgba(255, 255, 255, 1);
+    display: none;
+    padding-top: 16px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .faq-img {
+    width: 610px;
+    height: 734px;
+  }
+}
 .gallery {
   width: 375px;
-  background: rgba(233, 255, 146, 1);
+  height: 670px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-image: url("/image/gallery/Gallery.png");
 
   margin: auto;
-  padding: 32px 0px;
+  padding: 32px 0px 0;
 }
 
 .gallery__list {
@@ -612,8 +709,8 @@ a {
   margin: auto;
 }
 .gallery__item {
-  width: 320px;
-  height: 460px;
+  width: 308px;
+  height: 412px;
 
   overflow: hidden;
   position: relative;
@@ -630,14 +727,15 @@ a {
 @media screen and (min-width: 1200px) {
   .gallery {
     width: 1440px;
-
+    background-image: url("/image/gallery/Gallery\ \(1\).png");
     margin: auto;
-    padding: 32px 0;
+    padding: 32px 0 0;
   }
 
   .gallery__item {
-    width: 370px;
-    height: 532px;
+    width: 308px;
+    height: 412px;
+
     margin: 0 10px;
     overflow: hidden;
     position: relative;
@@ -645,46 +743,42 @@ a {
 }
 .features {
   width: 375px;
-  height: 1120px;
 
   margin: auto;
-  padding: 28px 20px 0px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("/img/features/Advantages.png");
+  padding: 32px 20px;
+  background: linear-gradient(180deg, #cbe4ff 0%, #ffffff 100%);
 }
 
 .features-list {
-  padding-top: 28px;
   margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 32px;
 }
 .features-item {
   width: 335px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
 }
-.features-img {
-  margin: auto;
-}
+
 .features-text-bold {
-  font-family: Ubuntu;
+  font-family: Roboto;
   font-size: 20px;
   font-weight: 700;
-  line-height: 22.98px;
-  text-align: center;
+  line-height: 23.44px;
+  text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-
-  padding: 16px 0 8px;
+  text-transform: uppercase;
+  padding: 0px 0 6px;
 }
 .features-text {
-  font-family: Ubuntu;
+  font-family: Roboto;
   font-size: 16px;
-  font-weight: 500;
-  line-height: 18.38px;
-  text-align: center;
+  font-weight: 400;
+  line-height: 18.75px;
+  text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
@@ -692,116 +786,47 @@ a {
 @media screen and (min-width: 1200px) {
   .features {
     width: 1440px;
-    height: 798px;
-
-    padding: 28px 240px 0px;
-
-    background-image: url("/img/features/Advantages\ \(1\).png");
+    padding: 103px;
   }
 
   .features-list {
-    padding-top: 60px;
     margin: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 28px;
-    column-gap: 80px;
-    justify-content: center;
+    gap: 35px;
+    column-gap: 83px;
   }
   .features-item {
-    width: 423px;
-  }
-}
-.benefits {
-  width: 375px;
-  margin: auto;
-  padding: 28px 0px;
-  background: linear-gradient(0deg, #39720b, #39720b);
-}
-
-.benefits-list {
-  padding-top: 40px;
-  margin: auto;
-  padding-bottom: 32px;
-}
-.benefits-item {
-  width: 335px;
-  height: 364.7px;
-  padding: 18px;
-  border-radius: 22px;
-  background: rgba(255, 255, 255, 1);
-  margin: 0 5px;
-}
-.benefits-img {
-  margin: auto;
-}
-.benefits-text-bold {
-  font-family: Ubuntu;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 20.68px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-
-  padding: 18px 0 10px;
-}
-.benefits-text {
-  font-family: Ubuntu;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-}
-@media screen and (min-width: 1200px) {
-  .benefits {
-    width: 1440px;
-    margin: auto;
-    padding: 28px 80px;
-    background: linear-gradient(0deg, #39720b, #39720b);
-  }
-
-  .benefits-list {
-    padding-top: 64px;
-    margin: auto;
-    padding-bottom: 32px;
-  }
-  .benefits-item {
-    width: 540px;
-    height: 187px;
+    width: 567px;
     display: flex;
-    gap: 18px;
-    margin: 0 10px;
+    gap: 12px;
+    align-items: center;
   }
-  .benefits-img {
-    margin: 0;
-  }
-  .benefits-text-bold {
-    font-family: Ubuntu;
-    font-size: 18px;
+
+  .features-text-bold {
+    font-family: Roboto;
+    font-size: 20px;
     font-weight: 700;
-    line-height: 20.68px;
+    line-height: 23.44px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-
-    padding: 0px 0 10px;
+    text-transform: uppercase;
+    padding: 0px 0 6px;
   }
-  .benefits-text {
-    font-family: Ubuntu;
+  .features-text {
+    font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 18.75px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
 }
 .footer {
-  background: rgba(57, 114, 11, 1);
+  background: linear-gradient(180deg, #7ebeff 0%, #0062eb 100%);
 
   color: #ffffff;
   padding: 14px;
@@ -824,10 +849,10 @@ a {
   gap: 4px;
 }
 .footer-text {
-  font-family: Ubuntu;
+  font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
-  line-height: 18.38px;
+  line-height: 18.75px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -838,10 +863,10 @@ a {
 }
 
 .footer-copyright {
-  font-family: Ubuntu;
+  font-family: Roboto;
   font-size: 10px;
   font-weight: 500;
-  line-height: 11.49px;
+  line-height: 11.72px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -864,20 +889,20 @@ a {
     gap: 6px;
   }
   .footer-text {
-    font-family: Ubuntu;
+    font-family: Roboto;
     font-size: 18px;
     font-weight: 500;
-    line-height: 20.68px;
+    line-height: 21.09px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
 
   .footer-copyright {
-    font-family: Ubuntu;
+    font-family: Roboto;
     font-size: 10px;
     font-weight: 500;
-    line-height: 11.49px;
+    line-height: 11.72px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
@@ -885,10 +910,9 @@ a {
 }
 .policy-terms-container {
   padding: 124px 16px 116px;
-  color: rgba(0, 0, 0, 1);
 }
 .policy-terms-title {
-  font-family: Ubuntu;
+  font-family: Roboto;
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
@@ -898,7 +922,7 @@ a {
 }
 
 .policy-terms-text {
-  font-family: Ubuntu;
+  font-family: Roboto;
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
@@ -909,7 +933,7 @@ a {
   padding-top: 20px;
 }
 .policy-terms-texts {
-  font-family: Ubuntu;
+  font-family: Roboto;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -920,7 +944,7 @@ a {
   padding-top: 8px;
 }
 .policy-terms-text-one {
-  font-family: Ubuntu;
+  font-family: Roboto;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -935,7 +959,7 @@ a {
   list-style-type: disc;
 
   padding: 20px 0 20px 25px;
-  font-family: Ubuntu;
+  font-family: Roboto;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -951,7 +975,7 @@ a {
   list-style-type: disc;
 
   padding-left: 25px;
-  font-family: Ubuntu;
+  font-family: Roboto;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -979,7 +1003,7 @@ a {
   border-radius: 20px;
   padding: 30px;
   background: rgba(255, 255, 255, 1);
-  border: 1px solid rgba(24, 179, 0, 1);
+  border: 1px solid rgba(102, 214, 253, 1);
   box-shadow: 0px 14px 42px 0px rgba(8, 15, 52, 0.06);
 
   text-align: center;
@@ -989,13 +1013,14 @@ a {
 }
 
 .cookie-popup-text-two {
-  font-family: Ubuntu;
+  font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+
   color: rgba(87, 78, 68, 1);
 }
 .cookie-button-container {
@@ -1009,13 +1034,14 @@ a {
 }
 .cookie-button {
   border: none;
-  font-family: Ubuntu;
+  font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
-  text-align: center;
+  text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+
   color: rgba(87, 78, 68, 1);
   border: none;
   background-color: transparent;
@@ -1027,7 +1053,8 @@ a {
   color: rgba(255, 255, 255, 1);
   border-radius: 56px;
   opacity: 0px;
-  background: rgba(24, 179, 0, 1);
+  background: rgba(88, 205, 254, 1);
+
   box-shadow: 0px 3px 12px 0px rgba(74, 58, 255, 0.18);
 }
 .close-popup {

@@ -32,27 +32,32 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!localStorage.getItem("cookiesAccepted")) {
         popup.style.display = "block";
     }
-
-    
     acceptButton.onclick = function () {
         localStorage.setItem("cookiesAccepted", "true");
         popup.style.display = "none";
     };
-
-    
     declineButton.onclick = function () {
         localStorage.setItem("cookiesAccepted", "false");
         popup.style.display = "none";
     };
-
- 
     closeButton.onclick = function () {
         popup.style.display = "none";
     };
 });
 
 
+function toggleAnswer(element) {
+  const answer = element.nextElementSibling;
+  const buttonImg = element.querySelector(".toggle-button img"); 
 
+  if (answer.style.display === "none" || answer.style.display === "") {
+    answer.style.display = "block";
+    buttonImg.src = "/image/faq//icon close.png"; 
+  } else {
+    answer.style.display = "none";
+    buttonImg.src = "/image/faq/icon open.png"; 
+  }
+}
 
 
 
